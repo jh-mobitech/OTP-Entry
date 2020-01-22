@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="App118.MainPage">
+    
+    <StackLayout Padding="0,100,0,0">
+
+        <Grid>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+
+
+                <StackLayout Grid.Column="0">
+
+                    <Label x:Name="label1" Text="" TextColor="Black" HorizontalTextAlignment="Center" HeightRequest="30"/>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="60" HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="1">
+
+                    <Label x:Name="label2" Text="" TextColor="Black" HorizontalTextAlignment="Center" Grid.Column="1" HeightRequest="30"/>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="60" HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="2">
+
+                    <Label x:Name="label3" Text="" TextColor="Black" HorizontalTextAlignment="Center" Grid.Column="2" HeightRequest="30"/>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="60" HorizontalOptions="Center"/>
+                </StackLayout>
+
+                <StackLayout Grid.Column="3">
+
+                    <Label x:Name="label4" Text="" TextColor="Black" HorizontalTextAlignment="Center" Grid.Column="3" HeightRequest="30"/>
+                    <BoxView BackgroundColor="Gray" HeightRequest="1" WidthRequest="60" HorizontalOptions="Center"/>
+                </StackLayout>
+
+            </Grid>
+                        
+            <Editor TextChanged="Editor_TextChanged" Keyboard="Numeric" TextColor="Transparent" BackgroundColor="Transparent"  HorizontalOptions="FillAndExpand" Grid.Row="0"/>
+
+        </Grid>
+        
+    </StackLayout>
+
+</ContentPage>
